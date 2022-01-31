@@ -19,8 +19,8 @@ async def startcmd(client:Client, message:Message):
     user_mention = user.mention if message.from_user else user.title  
     await message.reply_text(f'**Hello** {user_mention}, \n\n**Type /cmds to know all my commands!**', 
                   reply_markup=InlineKeyboardMarkup([
-                               [InlineKeyboardButton("💠 Developer", url="t.me/Devi_l07")],
-                               [InlineKeyboardButton("💰 Buy Authorization", url="t.me/Devi_l07")]]), quote=True)
+                               [InlineKeyboardButton("💠 Developer", url="t.me/carsonH")],
+                               [InlineKeyboardButton("💰 Buy Authorization", url="t.me/carsonH")]]), quote=True)
        
 @Client.on_message(filters.command(["cmds"]))
 async def cmds(_, m):
